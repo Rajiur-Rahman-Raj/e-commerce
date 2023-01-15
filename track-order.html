@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/x-icon" href="./img/icon/fav.png" />
+      <title>Track Order</title>
+      <!-- bootstrap 5 -->
+      <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+      <!-- owl carousel -->
+      <link rel="stylesheet" href="./assets/plugins/owlcarousel/animate.css" />
+      <link rel="stylesheet" href="./assets/plugins/owlcarousel/owl.carousel.min.css" />
+      <link rel="stylesheet" href="./assets/plugins/owlcarousel/owl.theme.default.min.css" />
+      <!-- fancy box -->
+      <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.css" />
+      <!-- range slider -->
+      <link rel="stylesheet" href="./assets/plugins/rangeslider/range-slider.css" />
+      <!-- font awesome 5 -->
+      <script src="./assets/fontawesome/fontawesomepro.js"></script>
+      <!-- custom css -->
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body class="">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+         <div class="container">
+            <a class="navbar-brand" href="shop.html"> <img src="./img/icon/logo.png" alt="" /></a>
+
+            <!-- navbar text -->
+            <span class="navbar-text">
+               <!-- shopping cart -->
+               <div class="shopping-cart">
+                  <button class="dropdown-toggle">
+                     <i class="fal fa-shopping-cart"></i>
+                     <span class="count">2</span>
+                  </button>
+                  <ul class="cart-dropdown">
+                     <div class="dropdown-box">
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <img src="./img/product/iPhone-14-Purple-6116.jpg" alt="" />
+                              <div class="text">
+                                 <p>iPhone 14 Purple</p>
+                                 <span class="price">$799</span> <br />
+                                 <span class="quantity">QTY: 1</span>
+                                 <button class="close">
+                                    <i class="fal fa-times-circle"></i>
+                                 </button>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <img src="./img/product/Pixel-7-Lemongrass-7348.jpg" alt="" />
+                              <div class="text">
+                                 <p>Pixel 7 Lemongrass</p>
+                                 <span class="price">$599</span> <br />
+                                 <span class="quantity">QTY: 1</span>
+                                 <button class="close">
+                                    <i class="fal fa-times-circle"></i>
+                                 </button>
+                              </div>
+                           </a>
+                        </li>
+                     </div>
+                     <div class="cart-bottom">
+                        <p>Cart subtotal: <span>$50</span></p>
+                        <div class="d-flex justify-content-between mt-3">
+                           <a href="cart.html" class="btn-custom">cart</a>
+                           <a href="checkout.html" class="btn-custom">checkout</a>
+                        </div>
+                     </div>
+                  </ul>
+               </div>
+               <a href="track-order.html" class="btn-custom">Track Order</a>
+            </span>
+         </div>
+      </nav>
+
+      <!-- banner section -->
+      <section class="banner-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <nav aria-label="breadcrumb">
+                     <ol class="breadcrumb justify-content-start">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Track Order</li>
+                     </ol>
+                  </nav>
+                  <h3 class="text-center">Track Order</h3>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <div class="track-order">
+         <div class="container">
+            <form action="">
+               <div class="row g-4 justify-content-center">
+                  <div class="input-box input-group col-lg-6">
+                     <input class="form-control" type="text" placeholder="Order ID" />
+                     <button class="btn-custom">Track Order</button>
+                  </div>
+               </div>
+            </form>
+            <div class="row">
+               <div class="col">
+                  <div class="process">
+                     <div class="box">
+                        <div class="icon completed">
+                           <img src="./img/icon/process-1.png" alt="" />
+                        </div>
+                        <h5>Accepted</h5>
+                     </div>
+                     <div class="box">
+                        <div class="icon completed">
+                           <img src="./img/icon/process-2.png" alt="" />
+                        </div>
+                        <h5>Picked</h5>
+                     </div>
+                     <div class="box">
+                        <div class="icon completed">
+                           <img src="./img/icon/process-3.png" alt="" />
+                        </div>
+                        <h5>In Transit</h5>
+                     </div>
+                     <div class="box">
+                        <div class="icon">
+                           <img src="./img/icon/process-4.png" alt="" />
+                        </div>
+                        <h5>Out for delivery</h5>
+                     </div>
+                     <div class="box">
+                        <div class="icon">
+                           <img src="./img/icon/process-5.png" alt="" />
+                        </div>
+                        <h5>Delivered</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-lg-6">
+                  <div class="order-status">
+                     <div class="d-md-flex justify-content-between">
+                        <div>
+                           <h5>Order: <span>#34LASDJ34S</span></h5>
+                           <p>Expected Arrival: 12 Dec, 2022</p>
+                           <p>Shipped With: Pathao</p>
+                        </div>
+                        <div>
+                           <h5>Ship To:</h5>
+                           <p>1234 North Avenue Luke, IN 3601</p>
+                           <p>California, New York</p>
+                        </div>
+                     </div>
+                     <a class="print-invoice" href="invoice-template.html">
+                        <i class="fal fa-file-invoice"></i> Print Invoice
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- footer section -->
+      <footer class="footer-section">
+         <div class="container">
+            <div class="row gy-5 gy-lg-0">
+               <div class="col-lg-3 col-md-6 pe-lg-5">
+                  <div class="footer-box">
+                     <a class="navbar-brand" href="index.html"> <img src="./img/icon/logo-2.png" alt="" /></a>
+                     <p class="company-bio">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, maiores. Quasi voluptatibus
+                        vitae doloremque sint non inventore possimus incidunt a?
+                     </p>
+                     <div class="social-links">
+                        <a href="https://www.facebook.com/">
+                           <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                           <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                           <i class="fab fa-youtube"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 pe-lg-5">
+                  <div class="footer-box">
+                     <h4>Useful Links</h4>
+                     <ul>
+                        <li><a href="">Reward Card</a></li>
+                        <li><a href=""> EMI Policy</a></li>
+                        <li><a href=""> Privacy Policy</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 pe-lg-5">
+                  <div class="footer-box">
+                     <h4>Useful Links</h4>
+                     <ul>
+                        <li><a href=""> Refund Policy</a></li>
+                        <li><a href=""> Warranty Policy</a></li>
+                        <li><a href=""> How to Exchange Any Device</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="footer-box">
+                     <h4>Contact us</h4>
+                     <ul>
+                        <li>Address: <span>1234 North Avenue Luke, IN 3601</span></li>
+                        <li>Email: <span>support@website.com</span></li>
+                        <li>Phone: <span>(01) 123 456 7890</span></li>
+                        <li>Fax: <span>(01) 123 456 7890</span></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="d-flex copyright justify-content-between">
+               <div>
+                  <span> All rights reserved © 2022 by<a href="">Bug Finder</a> </span>
+               </div>
+               <div>
+                  <a href="" class="language">Bengali</a>
+                  <a href="" class="language">English</a>
+                  <a href="" class="language">Spanish</a>
+                  <a href="" class="language">German</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- bootstrap -->
+      <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+      <!-- jquery cdn -->
+      <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+      <!-- owl carousel -->
+      <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+      <!-- fancy box -->
+      <script src="./assets/plugins/fancybox/fancybox.umd.js"></script>
+      <!-- range slider -->
+      <script src="./assets/plugins/rangeslider/range-slider.min.js"></script>
+      <!-- social share -->
+      <script src="./assets/plugins/socialjs/socialSharing.js"></script>
+      <!-- custom script -->
+      <script src="./js/script.js"></script>
+   </body>
+</html>

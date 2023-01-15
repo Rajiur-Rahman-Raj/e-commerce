@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/x-icon" href="./img/icon/fav.png" />
+      <title>Shop</title>
+      <!-- bootstrap 5 -->
+      <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+      <!-- owl carousel -->
+      <link rel="stylesheet" href="./assets/plugins/owlcarousel/animate.css" />
+      <link rel="stylesheet" href="./assets/plugins/owlcarousel/owl.carousel.min.css" />
+      <link rel="stylesheet" href="./assets/plugins/owlcarousel/owl.theme.default.min.css" />
+      <!-- fancy box -->
+      <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.css" />
+      <!-- range slider -->
+      <link rel="stylesheet" href="./assets/plugins/rangeslider/range-slider.css" />
+      <!-- font awesome 5 -->
+      <script src="./assets/fontawesome/fontawesomepro.js"></script>
+      <!-- custom css -->
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body class="">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+         <div class="container">
+            <a class="navbar-brand" href="shop.html"> <img src="./img/icon/logo.png" alt="" /></a>
+
+            <!-- navbar text -->
+            <span class="navbar-text">
+               <!-- shopping cart -->
+               <div class="shopping-cart">
+                  <button class="dropdown-toggle">
+                     <i class="fal fa-shopping-cart"></i>
+                     <span class="count">2</span>
+                  </button>
+                  <ul class="cart-dropdown">
+                     <div class="dropdown-box">
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <img src="./img/product/iPhone-14-Purple-6116.jpg" alt="" />
+                              <div class="text">
+                                 <p>iPhone 14 Purple</p>
+                                 <span class="price">$799</span> <br />
+                                 <span class="quantity">QTY: 1</span>
+                                 <button class="close">
+                                    <i class="fal fa-times-circle"></i>
+                                 </button>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <img src="./img/product/Pixel-7-Lemongrass-7348.jpg" alt="" />
+                              <div class="text">
+                                 <p>Pixel 7 Lemongrass</p>
+                                 <span class="price">$599</span> <br />
+                                 <span class="quantity">QTY: 1</span>
+                                 <button class="close">
+                                    <i class="fal fa-times-circle"></i>
+                                 </button>
+                              </div>
+                           </a>
+                        </li>
+						<li>
+                           <a class="dropdown-item" href="#">
+                              <img src="./img/product/Pixel-7-Lemongrass-7348.jpg" alt="" />
+                              <div class="text">
+                                 <p>Pixel 7 Lemongrass</p>
+                                 <span class="price">$599</span> <br />
+                                 <span class="quantity">QTY: 1</span>
+                                 <button class="close">
+                                    <i class="fal fa-times-circle"></i>
+                                 </button>
+                              </div>
+                           </a>
+                        </li>
+						<li>
+                           <a class="dropdown-item" href="#">
+                              <img src="./img/product/Pixel-7-Lemongrass-7348.jpg" alt="" />
+                              <div class="text">
+                                 <p>Pixel 7 Lemongrass</p>
+                                 <span class="price">$599</span> <br />
+                                 <span class="quantity">QTY: 1</span>
+                                 <button class="close">
+                                    <i class="fal fa-times-circle"></i>
+                                 </button>
+                              </div>
+                           </a>
+                        </li>
+                     </div>
+                     <div class="cart-bottom">
+                        <p>Cart subtotal: <span>$50</span></p>
+                        <div class="d-flex justify-content-between mt-3">
+                           <a href="cart.html" class="btn-custom">cart</a>
+                           <a href="checkout.html" class="btn-custom">checkout</a>
+                        </div>
+                     </div>
+                  </ul>
+               </div>
+               <a href="track-order.html" class="btn-custom">Track Order</a>
+            </span>
+         </div>
+      </nav>
+
+      <!-- banner section -->
+      <section class="banner-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <nav aria-label="breadcrumb">
+                     <ol class="breadcrumb justify-content-start">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                     </ol>
+                  </nav>
+                  <h3 class="text-center">Shop</h3>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- shop section -->
+      <section class="shop-section">
+         <div class="container">
+            <div class="row g-lg-5">
+               <div class="col-lg-3 order-1 order-lg-0">
+                  <div class="filter-area">
+                     <div class="filter-box">
+                        <form action="">
+                           <h4>Search here</h4>
+                           <div class="input-group">
+                              <input type="text" class="form-control" placeholder="search..." />
+                              <button><i class="fal fa-search" aria-hidden="true"></i></button>
+                           </div>
+                        </form>
+                     </div>
+                     <!-- PRICE RANGE -->
+                     <div class="filter-box">
+                        <h4>Filter by price</h4>
+                        <div class="input-box">
+                           <input type="text" class="js-range-slider" name="my_range" value="" />
+                           <label for="customRange1" class="form-label mt-3"> $10 — $1,200</label>
+                        </div>
+                     </div>
+                     <div class="filter-box">
+                        <h4>Categories</h4>
+                        <div class="check-box">
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="category1" />
+                              <label class="form-check-label" for="category1">Cover & Glass </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="category2" />
+                              <label class="form-check-label" for="category2">Media Streamers </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="category3" />
+                              <label class="form-check-label" for="category3">Smart Electronics </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="category4" />
+                              <label class="form-check-label" for="category4">Phones & Tablets </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="category5" />
+                              <label class="form-check-label" for="category5">Laptop & Desktop </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="filter-box">
+                        <h4>Brands</h4>
+                        <div class="check-box">
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="brand1" />
+                              <label class="form-check-label" for="brand1">Apple </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="brand2" />
+                              <label class="form-check-label" for="brand2">Google </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="brand3" />
+                              <label class="form-check-label" for="brand3">Samsung </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="brand4" />
+                              <label class="form-check-label" for="brand4">Huawei </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="brand5" />
+                              <label class="form-check-label" for="brand5">Motorola </label>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="filter-box">
+                        <h4>categories</h4>
+                        <ul class="links">
+                           <li><a href="">Phones & Tablets</a></li>
+                           <li><a href="">Laptop & Desktop</a></li>
+                           <li><a href="">Sound Equipment</a></li>
+                           <li><a href="">Power & Accessories</a></li>
+                           <li><a href="">Fitness & Wearable</a></li>
+                           <li><a href="">Peripherals</a></li>
+                        </ul>
+                     </div>
+                     <div class="filter-box">
+                        <h4>popular tags</h4>
+                        <span class="tag-item">
+                           <input type="radio" class="btn-check" name="tags" id="tag1" autocomplete="off" />
+                           <label class="btn btn-primary" for="tag1"> Phones & Tablets</label>
+                        </span>
+                        <span class="tag-item">
+                           <input type="radio" class="btn-check" name="tags" id="tag2" autocomplete="off" />
+                           <label class="btn btn-primary" for="tag2"> Power Adapter</label>
+                        </span>
+                        <span class="tag-item">
+                           <input type="radio" class="btn-check" name="tags" id="tag3" autocomplete="off" />
+                           <label class="btn btn-primary" for="tag3"> MacBook</label>
+                        </span>
+                        <span class="tag-item">
+                           <input type="radio" class="btn-check" name="tags" id="tag4" autocomplete="off" />
+                           <label class="btn btn-primary" for="tag4"> Smart Watch</label>
+                        </span>
+                        <span class="tag-item">
+                           <input type="radio" class="btn-check" name="tags" id="tag5" autocomplete="off" />
+                           <label class="btn btn-primary" for="tag5"> Airpods</label>
+                        </span>
+                        <span class="tag-item">
+                           <input type="radio" class="btn-check" name="tags" id="tag6" autocomplete="off" />
+                           <label class="btn btn-primary" for="tag6"> Overhead Headphones</label>
+                        </span>
+                        <span class="tag-item">
+                           <input type="radio" class="btn-check" name="tags" id="tag7" autocomplete="off" />
+                           <label class="btn btn-primary" for="tag7"> Speakers</label>
+                        </span>
+                        <span class="tag-item">
+                           <input type="radio" class="btn-check" name="tags" id="tag8" autocomplete="off" />
+                           <label class="btn btn-primary" for="tag8"> Wired Headphone</label>
+                        </span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-9">
+                  <div class="row g-4 mb-5">
+                     <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                           <div class="img-box">
+                              <img src="./img/product/iPhone-14-Blue-7810.jpg" class="img-fluid" alt="" />
+                           </div>
+                           <div class="text-box">
+                              <a href="product-details.html" class="title">iPhone 14 Blue</a>
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <h4 class="price mb-0">$799</h4>
+                                 <button class="add-to-cart">
+                                    <i class="fal fa-shopping-cart"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                           <div class="img-box">
+                              <img src="./img/product/iPhone-14-Midnight-4715.jpg" class="img-fluid" alt="" />
+                           </div>
+                           <div class="text-box">
+                              <a href="product-details.html" class="title">iPhone 14 Midnight</a>
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <h4 class="price mb-0">$799</h4>
+                                 <button class="add-to-cart">
+                                    <i class="fal fa-shopping-cart"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                           <div class="img-box">
+                              <img src="./img/product/iPhone-14-Purple-6116.jpg" class="img-fluid" alt="" />
+                           </div>
+                           <div class="text-box">
+                              <a href="product-details.html" class="title">iPhone 14 Purple</a>
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <h4 class="price mb-0">$799</h4>
+                                 <button class="add-to-cart">
+                                    <i class="fal fa-shopping-cart"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                           <div class="img-box">
+                              <img src="./img/product/iPhone-14-Red-5631.jpg" class="img-fluid" alt="" />
+                           </div>
+                           <div class="text-box">
+                              <a href="product-details.html" class="title">iPhone 14 Red</a>
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <h4 class="price mb-0">$799</h4>
+                                 <button class="add-to-cart">
+                                    <i class="fal fa-shopping-cart"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                           <div class="img-box">
+                              <img src="./img/product/iPhone-14-Starlight-8954.jpg" class="img-fluid" alt="" />
+                           </div>
+                           <div class="text-box">
+                              <a href="product-details.html" class="title">iPhone 14 Starlight</a>
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <h4 class="price mb-0">$799</h4>
+                                 <button class="add-to-cart">
+                                    <i class="fal fa-shopping-cart"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                           <div class="img-box">
+                              <img src="./img/product/Pixel-7-Obsidian-1130.jpg" class="img-fluid" alt="" />
+                           </div>
+                           <div class="text-box">
+                              <a href="product-details.html" class="title">Pixel 7 Obsidian</a>
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <h4 class="price mb-0">$599</h4>
+                                 <button class="add-to-cart">
+                                    <i class="fal fa-shopping-cart"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                           <div class="img-box">
+                              <img src="./img/product/Pixel-7-Lemongrass-7348.jpg" class="img-fluid" alt="" />
+                           </div>
+                           <div class="text-box">
+                              <a href="product-details.html" class="title">Pixel 7 Lemongrass</a>
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <h4 class="price mb-0">$599</h4>
+                                 <button class="add-to-cart">
+                                    <i class="fal fa-shopping-cart"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="product-box">
+                           <div class="img-box">
+                              <img src="./img/product/Pixel-7-Snow-9770.jpg" class="img-fluid" alt="" />
+                           </div>
+                           <div class="text-box">
+                              <a href="product-details.html" class="title">Pixel 7 Snow</a>
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <h4 class="price mb-0">$599</h4>
+                                 <button class="add-to-cart">
+                                    <i class="fal fa-shopping-cart"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <nav aria-label="Page navigation example">
+                     <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                           <a class="page-link">
+                              <i class="fal fa-angle-double-left"></i>
+                           </a>
+                        </li>
+                        <li class="page-item active">
+                           <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                           <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                           <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                           <a class="page-link" href="#">
+                              <i class="fal fa-angle-double-right"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <div class="container mb-5">
+         <div class="row">
+            <div class="col">
+               <div class="">
+                  <h3>Seller Details</h3>
+                  <p>
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora delectus repellendus voluptatibus
+                     quaerat quod nostrum deleniti. Dignissimos vero nulla alias eius, numquam ullam amet debitis
+                     mollitia harum autem aspernatur sit.
+                  </p>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod velit accusantium reprehenderit
+                     consequuntur molestias explicabo blanditiis saepe mollitia aspernatur delectus, ratione, placeat
+                     laboriosam voluptatem a nihil animi sint quo commodi? Lorem ipsum dolor sit amet consectetur
+                     adipisicing elit. Quod velit accusantium reprehenderit consequuntur molestias explicabo blanditiis
+                     saepe mollitia aspernatur delectus, ratione, placeat laboriosam voluptatem a nihil animi sint quo
+                     commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod velit accusantium
+                     reprehenderit consequuntur molestias explicabo blanditiis saepe mollitia aspernatur delectus,
+                     ratione, placeat laboriosam voluptatem a nihil animi sint quo commodi? Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Quod velit accusantium reprehenderit consequuntur molestias explicabo
+                     blanditiis saepe mollitia aspernatur delectus, ratione, placeat laboriosam voluptatem a nihil animi
+                     sint quo commodi?
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- footer section -->
+      <footer class="footer-section">
+         <div class="container">
+            <div class="row gy-5 gy-lg-0">
+               <div class="col-lg-3 col-md-6 pe-lg-5">
+                  <div class="footer-box">
+                     <a class="navbar-brand" href="index.html"> <img src="./img/icon/logo-2.png" alt="" /></a>
+                     <p class="company-bio">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, maiores. Quasi voluptatibus
+                        vitae doloremque sint non inventore possimus incidunt a?
+                     </p>
+                     <div class="social-links">
+                        <a href="https://www.facebook.com/">
+                           <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                           <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                           <i class="fab fa-youtube"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 pe-lg-5">
+                  <div class="footer-box">
+                     <h4>Useful Links</h4>
+                     <ul>
+                        <li><a href="">Reward Card</a></li>
+                        <li><a href=""> EMI Policy</a></li>
+                        <li><a href=""> Privacy Policy</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 pe-lg-5">
+                  <div class="footer-box">
+                     <h4>Useful Links</h4>
+                     <ul>
+                        <li><a href=""> Refund Policy</a></li>
+                        <li><a href=""> Warranty Policy</a></li>
+                        <li><a href=""> How to Exchange Any Device</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="footer-box">
+                     <h4>Contact us</h4>
+                     <ul>
+                        <li>Address: <span>1234 North Avenue Luke, IN 3601</span></li>
+                        <li>Email: <span>support@website.com</span></li>
+                        <li>Phone: <span>(01) 123 456 7890</span></li>
+                        <li>Fax: <span>(01) 123 456 7890</span></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="d-flex copyright justify-content-between">
+               <div>
+                  <span> All rights reserved © 2022 by<a href="">Bug Finder</a> </span>
+               </div>
+               <div>
+                  <a href="" class="language">Bengali</a>
+                  <a href="" class="language">English</a>
+                  <a href="" class="language">Spanish</a>
+                  <a href="" class="language">German</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- bootstrap -->
+      <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+      <!-- jquery cdn -->
+      <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+      <!-- owl carousel -->
+      <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+      <!-- fancy box -->
+      <script src="./assets/plugins/fancybox/fancybox.umd.js"></script>
+      <!-- range slider -->
+      <script src="./assets/plugins/rangeslider/range-slider.min.js"></script>
+      <!-- social share -->
+      <script src="./assets/plugins/socialjs/socialSharing.js"></script>
+      <!-- custom script -->
+      <script src="./js/script.js"></script>
+   </body>
+</html>
